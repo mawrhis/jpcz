@@ -1,4 +1,9 @@
 .homepage {
-  color: red; }
+  color: #CA514D; }
+
+.first__logo-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center; }
 
 /*# sourceMappingURL=style.css.map */
