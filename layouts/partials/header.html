@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode | default "en-us" }}">
+<html lang="{{ .Site.LanguageCode | default "en-us" }}" class="">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,12 +9,25 @@
 	{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
 	<link type="text/css" rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css">
 	<link type="text/css" rel="stylesheet" href="{{ .Site.BaseURL }}css/bootstrap-grid.css">
+  <link type="text/css" rel="stylesheet" href="{{ .Site.BaseURL }}css/bootstrap-reboot.css">
+  <link href="https://fonts.googleapis.com/css?family=Lobster|Roboto|Suez+One&amp;subset=latin-ext" rel="stylesheet">
 	{{ if .RSSLink -}}<link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}">{{- end }}
 	{{ .Hugo.Generator }}
-</head>
-<body>
-	<header>
-		<a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+
+<body >
+
+  <div class="parallax">
+    <div class="parallax__layer parallax__layer--1 bg-img">
+    </div>
+    <div class="parallax__layer parallax__layer--2 bg-clr">
+    </div>
+ <div clas="parallax__layer parallax__layer--base">
+	<header class="" >
+        <a href="{{ .Site.BaseURL }}" class="header__logo-wrapper">
+	      <h1 class="d-flex align-items-center"><span class="header__logo-text d-flex flex-column mr-4" ><span class="header__logo-text--top">Příhoda</span><span class="header__logo-text--bottom">tvoří weby</span></span>
+	      <div class="header__logo">{{ readFile "static/img/svg/logo.svg" | safeHTML }}</div>
+	      </h1>
+	    </a>
 		<nav>
 			<ul>
 				{{ range .Site.Menus.main }}

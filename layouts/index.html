@@ -1,23 +1,22 @@
 {{ partial "header.html" . }}
-	<main>
-    <div class="homepage">
-      <div class="container">
-        <div class="row">
+	<main class="">
+    <div class="homepage ">
+      <div class="container ">
+
+
+
+
+        <div class="row ">
           <div class="first col-12">
-            <div class="first__logo-wrapper">
-              <h1>Příhoda <span class="first__heading--grey">tvoří weby</span> 
-              <div class="first__logo">{{ readFile "static/img/svg/logo.svg" | safeHTML }}</div>
-              </h1>
-            </div>
-            <span>
-              Vytvořím webové stránky,
-              nakreslím grafiku,
-              nakóduji šablonu.
-              S chutí a nadšením.
-              Za peníze.
-            </span>
+            <h2 class="first__text" >
+              Vytvořím webové stránky,<br>
+              nakreslím grafiku,<br>
+              nakóduji šablonu.<br>
+              S chutí a nadšením.<br>
+              <span class="first__text-red">Za peníze.</span>
+            </h2>
           </div>
-          <div class="second">
+          <div class="second col-12">
             <h2>nabízím...</h2>
             <span>tvorba webu - kod - grafika</span>
             <span>
@@ -25,14 +24,16 @@
             </span>
             <a href="/portfolio">portfolio</a>
           </div>
-          <div class="section-3">
+          <div class="third col-12">
             <h2>kontakt</h2>
             <span>Prohlédněte si moje portfolio, nebo mě kontaktujte. Našli jste chybu, nebo si jen myslíte že by se dalo něco udělat lépe či jinak? Dejte mi vědět, rád od vás uslyším.</span>
           </div>
           <div class="footer">
+          </div>
         </div>
-    </div>
+      </div>
     </div>
 	</main>
+
 {{ partial "sidebar.html" . }}
 {{ partial "footer.html" . }}

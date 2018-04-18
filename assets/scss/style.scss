@@ -1,15 +1,66 @@
-
-@import "variables"; 
+@import "bootstrap";
+@import "variables";
+@import "header";
+@import "parallax";
 
 .homepage {
-  color: $color-main;
 }
 
 .first {
+  height: calc(100vh - 200px); //200px header height
 
-  &__logo-wrapper {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+  &__text{
+
+    @include media-breakpoint-up(sm) {
+      font-size: 2rem;
+      line-height: 2rem;
+    }
+
+    @include media-breakpoint-up(md) {
+      font-size: 3rem;
+      line-height: 3rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+      font-size: 4rem;
+      line-height: 4rem;
+    }
+
+  }
+
+  &__text-red {
+    color: $color-main;
   }
 }
+
+.second, .third {
+  height: 100vh; //200px header height
+}
+
+.second {
+  // background-color: $color-grey-light;
+}
+
+
+h1, h2, h3, h4, h5, h6{
+  font-weight: normal;
+}
+
+h1 {
+  font-size: (32 / $font-base-size) * 1rem;
+  line-height: (36 / $font-base-size) * 1rem;
+  font-family: $font-heading;
+}
+
+h2 {
+  font-size: (28 / $font-base-size) * 1rem;
+  line-height: (32 / $font-base-size) * 1rem;
+  font-family: $font-heading;
+}
+
+
+html {
+  font-family: $font-default;
+  font-size: $font-base-size * 1px;
+}
+

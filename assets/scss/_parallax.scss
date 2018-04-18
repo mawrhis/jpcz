@@ -1,0 +1,86 @@
+.parallax {
+    height: 500px; /* fallback for older browsers */
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-perspective: 300px;
+    perspective: 300px;
+
+
+    height: 500px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-perspective: 300px;
+    perspective: 300px;
+  }
+
+  .parallax__group {
+    position: relative;
+    height: 500px; /* fallback for older browsers */
+    height: 100vh;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+
+  .parallax__layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .parallax__group {
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+  }
+
+  // .parallax__layer--fore {
+  //   -webkit-transform: translateZ(90px) scale(.7);
+  //   transform: translateZ(90px) scale(.7);
+  //   z-index: 1;
+  // }
+
+  .parallax__layer--base {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    z-index: 0;
+  }
+
+  .parallax__layer--1 {
+    -webkit-transform: translateZ(150px) scale(.52);
+    transform: translateZ(150px) scale(.52);
+    z-index: -1;
+    height: 100vh;
+    top: calc(100vh - 300px);
+  }
+
+  .parallax__layer--2 {
+    -webkit-transform: translateZ(90px) scale(.75);
+    transform: translateZ(90px) scale(.75);
+    z-index: -2;
+    height: 100vh;
+    top: calc(100vh - 200px);
+  }
+
+//   .parallax__layer--deep {
+//     -webkit-transform: translateZ(-600px) scale(3);
+//     transform: translateZ(-600px) scale(3);
+//     z-index: 2;
+// }
+
+.bg-img {
+  background-image: url('../img/svg/trees.svg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.bg-clr {
+  background-color: $color-grey-light;
+}

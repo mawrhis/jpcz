@@ -30,7 +30,7 @@ var projectURL              = 'localhost:1313'; // Project URL - Something like 
 var productURL              = './'; // Theme/Plugin URL. Leave it like it is, since our gulpfile.js lives in the root folder.
 
 // Style related.
-var styleSource              = ['assets/scss/style.scss', 'assets/scss/vendor/bootstrap/bootstrap-grid.scss']; // Path to main .scss file.
+var styleSource              = ['assets/scss/style.scss']; // Path to main .scss file.
 var styleDestination         = 'static/css'; // Path to place the compiled CSS file.
 
 // JS Vendor related.

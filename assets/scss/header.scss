@@ -1,0 +1,29 @@
+.header {
+
+  &__logo {
+  flex: 1 0;
+
+    svg {
+
+      stroke-width: 130px;
+      height: 130px;
+    }
+  }
+
+  &__logo-text {
+    align-items: center;
+    font-family: $font-logo;
+  }
+
+  &__logo-text--top {
+    font-size: (42 / $font-base-size) * 1rem;
+  }
+
+  &__logo-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: inherit;
+  }
+}
